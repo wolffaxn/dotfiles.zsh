@@ -1,0 +1,12 @@
+S.gpg-agent=
+S.gpg-agent.browser=
+S.gpg-agent.extra=
+S.gpg-agent.ssh=
+openpgp-revocs.d/
+private-keys-v1.d/
+pubring.kbx
+pubring.kbx~
+sshcontrol
+tofu.db
+trustdb.gpg
+

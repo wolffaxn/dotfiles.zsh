@@ -4,10 +4,17 @@
       relink: true
 
 - clean:
-    ~/.config/ssh:
-      recursive: true
+    ~/.config/:
+      glob: true
+      path: config/*
 
 - link:
+    # gnuppg
+    ~/.config/gnupg/.gitignore: gnupg/.gitignore
+    ~/.config/gnupg/gpg-agent.conf: gnupg/gpg-agent.conf
+    ~/.config/gnupg/gpg.conf: gnupg/gpg.conf 
+    
+    # ssh
     ~/.config/ssh/config: ssh/config
 
 - shell:
