@@ -9,6 +9,9 @@
       path: config/*
 
 - link:
+    # gem
+    ~/.config/gem/gemrc: ruby/gemrc
+
     # gnuppg
     ~/.config/gnupg/.gitignore: gnupg/.gitignore
     ~/.config/gnupg/gpg-agent.conf: gnupg/gpg-agent.conf
