@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+#
+# Generates table of contents for markdown files inside local git repository
+# using doctoc (see https://github.com/thlorenz/doctoc).
+#
+# Copyright (c) 2019-2020 Alexander Wolff <wolffaxn[at]gmail[dot]com>
+#
+
+set -e
+set -o pipefail
+
+if ! command -v doctoc >/dev/null 2>&1; then
+  echo "toc: doctoc not found. Please install doctoc before using this script." 1>&2
+  exit 1
+fi
+
+FILES=${1:-README.md}
+MODES=${2:-github}
+TITLE=${3:-**Table of Contents**}
+
+doctoc "${FILES}" --"${MODES}" --title "${TITLE}"
+
