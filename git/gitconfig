@@ -5,6 +5,11 @@
   # list contributors with number of commits
   contrib = shortlog --numbered --summary
 
+  # show verbose output about tags, branches or remotes
+  tags = tag -l
+  branches = branch -a
+  remotes = remote -v
+
 [apply]
   # detect whitespace errors when applying a patch
   whitespace = warn
