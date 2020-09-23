@@ -29,6 +29,13 @@
     # ssh
     ~/.config/ssh/config: ssh/config
 
+    # spacemacs
+    ~/.emacs.d:
+      create: true
+      path: spacemacs/emacs.d
+
+    ~/.spacemacs: spacemacs/spacemacs
+
     # bin
     ~/.local/bin/:
       glob: true

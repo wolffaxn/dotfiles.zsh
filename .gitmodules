@@ -1,4 +1,6 @@
 [submodule "meta/.dotbot"]
   path = meta/.dotbot
   url = https://github.com/anishathalye/dotbot
-
+[submodule "spacemacs/emacs.d"]
+  path = spacemacs/emacs.d
+  url = https://github.com/syl20bnr/spacemacs
