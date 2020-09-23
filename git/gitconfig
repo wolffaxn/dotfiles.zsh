@@ -2,6 +2,13 @@
   # list aliases
   aliases = !sh -c 'git config -l | grep alias | cut -c 7- | sort'
 
+  # shorthand for commit
+  ci = commit
+  # amend the currently staged files to the latest commit reusing last commit message
+  amend = commit --amend --reuse-message=HEAD
+  # work in progress
+  wip = commit -am "WIP"
+
   # list contributors with number of commits
   contrib = shortlog --numbered --summary
 
