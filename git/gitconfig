@@ -1,0 +1,80 @@
+[apply]
+  # detect whitespace errors when applying a patch
+  whitespace = warn
+
+[branch]
+  # let the local branch track the remote branch when branching off a remote branch
+  autosetupmerge = true
+
+[color]
+  ui = auto
+  interactive = auto
+
+[color "branch"]
+  current = yellow reverse
+  local = yellow
+  remote = green
+
+[color "diff"]
+  commit = green bold
+  frag = magenta bold
+  meta = yellow bold
+  new = green bold
+  old = red bold
+  whitespace = red reverse
+
+[color "status"]
+  added = yellow
+  changed = green
+  untracked = cyan
+
+[commit]
+  gpgsign = true
+
+[core]
+  # use custom gitignore
+  excludesfile = ~/.config/git/ignore
+
+  # default editor for commit messages and other inputs
+  editor = vim
+
+  # convert CRLF to LF on commit (on a Linux or Mac system)
+  autocrlf = input
+  safecrlf = true
+
+  # make `git rebase` safer on macos
+  # see: <http://www.git-tower.com/blog/make-git-rebase-safe-on-osx/>
+  trustctime = false
+
+[credential]
+  helper = osxkeychain
+
+[gpg]
+  program = /usr/local/bin/gpg
+
+[pull]
+  # enabling rebasing
+  rebase = true
+
+[push]
+  # When push.default is set to 'matching', git will push local branches
+  # to the remote branches that already exist with the same name.
+  default = matching
+
+[rebase]
+  # use --autosquash by default
+  autoSquash = true
+  # use --autostash when running git pull --rebase and when rebasing interactively
+  autoStash = true
+  # warn about removed commits in interactive mode
+  missingCommitsCheck = warn
+
+[rerere]
+  # enabling the recording of resolved conflicts
+  enabled = true
+
+[status]
+  showUntrackedFiles = all
+
+[include]
+  path = ~/.config/git/config.local

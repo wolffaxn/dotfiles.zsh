@@ -1,0 +1,13 @@
+[github]
+  user = wolffaxn
+
+[hub]
+  protocol = https
+
+[user]
+  # git user name
+  name = "Alexander Wolff"
+  # git user email
+  email = wolffaxn@gmail.com
+  # gpg signing key
+  signingKey = 4C59FA7045945AC6
