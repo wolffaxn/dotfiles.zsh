@@ -9,6 +9,11 @@
   # work in progress
   wip = commit -am "WIP"
 
+  # checkout
+  co = checkout
+  # checkout a branch, creating it if necessary
+  cob = !sh -c 'git checkout -b $1 2> /dev/null || git checkout $1'
+
   # list contributors with number of commits
   contrib = shortlog --numbered --summary
 
