@@ -1,0 +1,105 @@
+# -*- mode: ruby -*-
+# Brewfile
+#
+# Use `brew bundle` to install the formulas listed below.
+
+# pre-configuration for brew sources
+tap 'caskroom/cask'
+tap 'homebrew/bundle'
+
+# bundles
+brew 'ansible'
+brew 'ant'
+brew 'autoconf'
+brew 'automake'
+brew 'awscli'
+brew 'azure-cli'
+brew 'bash'
+brew 'bash-completion'
+brew 'bzip2'
+brew 'cask'
+brew 'coreutils'
+brew 'csshx'
+brew 'curl'
+brew 'diff-so-fancy'
+brew 'dos2unix'
+brew 'ffmpeg'
+brew 'git'
+brew 'git-crypt'
+brew 'git-lfs'
+brew 'gnupg', args: ['--with-large-secmem']
+brew 'gnu-sed', args: ['--with-default-names']
+brew 'go'
+brew 'gradle'
+brew 'graphviz'
+brew 'grc'
+brew 'groovy'
+brew 'htop-osx'
+brew 'httpie'‚
+brew 'hub'
+brew 'jq'
+brew 'kotlin'
+brew 'maven'
+brew 'molecule'
+brew 'moreutils'
+brew 'mutt'
+brew 'node'
+brew 'openssl'
+brew 'packer'
+brew 'pandoc'
+brew 'plantuml'
+brew 'protobuf'
+brew 'pstree'
+brew 'python'
+brew 'rbenv'
+brew 'shellcheck'
+brew 'sqlite'
+brew 'ssh-copy-id'
+brew 'terraform'
+brew 'tmux', args: ['--with-utf8proc']
+brew 'tree'
+brew 'unrar'
+brew 'upx'
+brew 'vim', args: ['--override-system-vi']
+brew 'watch'
+brew 'wget', args: ['--enable-iri']
+brew 'zsh'
+brew 'zsh-completions'
+
+# openjdk
+tap 'AdoptOpenJDK/openjdk'
+brew 'adoptopenjdk-openjdk14'
+
+# mac apps
+cask_args appdir: '/Applications'
+cask 'appcleaner'
+cask 'caffeine'
+cask 'calibre'
+cask 'docker'
+cask 'flux'
+cask 'google-chrome'
+cask 'gpg-suite'
+cask 'handbrake'
+cask 'intellij-idea'
+cask 'iterm2'
+cask 'karabiner-elements'
+cask 'keepassx'
+cask 'libreoffice'
+cask 'minecraft'
+cask 'path-finder'
+cask 'pgadmin3'
+cask 'spotify'
+cask 'the-unarchiver'
+cask 'thunderbird'
+cask 'vagrant'
+cask 'vagrant-manager'
+cask 'vienna'
+cask 'virtualbox'
+cask 'visual-studio-code'
+cask 'vlc'
+
+# quick look plugins
+cask 'qlcolorcode'
+cask 'qlstephen'
+cask 'qlmarkdown'
+cask 'quicklook-json'
