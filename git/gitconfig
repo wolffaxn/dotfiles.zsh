@@ -20,6 +20,9 @@
   # clean up local repository
   cleanup = !sh -c 'git gc --prune=now && git remote prune origin'
 
+  # cherry pick
+  cp = cherry-pick
+
   # show verbose output about tags, branches or remotes
   tags = tag -l
   branches = branch -a
