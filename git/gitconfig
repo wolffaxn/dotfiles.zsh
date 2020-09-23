@@ -52,6 +52,10 @@
 [gpg]
   program = /usr/local/bin/gpg
 
+[init]
+  # see https://sfconservancy.org/news/2020/jun/23/gitbranchname
+  defaultBranch = main
+
 [pull]
   # enabling rebasing
   rebase = true
