@@ -17,6 +17,9 @@
   # list contributors with number of commits
   contrib = shortlog --numbered --summary
 
+  # clean up local repository
+  cleanup = !sh -c 'git gc --prune=now && git remote prune origin'
+
   # show verbose output about tags, branches or remotes
   tags = tag -l
   branches = branch -a
