@@ -57,6 +57,7 @@ values."
      ;; spell-checking
      ;; syntax-checking
      terraform
+     vagrant
      ;; version-control
      yaml
      )
