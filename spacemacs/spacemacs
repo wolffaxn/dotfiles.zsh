@@ -39,6 +39,7 @@ values."
      helm
      auto-completion
      better-defaults
+     docker
      emacs-lisp
      git
     (go :variables
