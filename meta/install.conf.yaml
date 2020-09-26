@@ -13,6 +13,9 @@
         path: bin/*
 
 - link:
+    # curl
+    ~/.config/curl/curlrc: curl/curlrc
+
     # gem
     ~/.config/gem/gemrc: ruby/gemrc
 
