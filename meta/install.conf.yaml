@@ -42,6 +42,10 @@
 
     ~/.spacemacs: spacemacs/spacemacs
 
+    # tig
+    ~/.config/tig/config: tig/tigrc
+
+    # tmux
     ~/.tmux.conf: tmux/tmux.conf
     ~/.tmux/plugins/:
       glob: true
