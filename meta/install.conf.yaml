@@ -42,6 +42,11 @@
 
     ~/.spacemacs: spacemacs/spacemacs
 
+    ~/.tmux.conf: tmux/tmux.conf
+    ~/.tmux/plugins/:
+      glob: true
+      path: tmux/plugins/*
+
     # bin
     ~/.local/bin/:
       glob: true
