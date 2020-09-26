@@ -32,6 +32,9 @@
     # htop
     ~/.config/htop/htoprc: htop/htoprc
 
+    # idea
+    ~/.ideavimrc: idea/ideavimrc
+
     # ssh
     ~/.config/ssh/config: ssh/config
 

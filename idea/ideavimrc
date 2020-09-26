@@ -1,0 +1,4 @@
+" make yanking copy to clipboard
+set clipboard+=unnamed
+" turn off the audio beeps (no beeps)
+set visualbell
