@@ -99,6 +99,11 @@ cask 'virtualbox'
 cask 'visual-studio-code'
 cask 'vlc'
 
+# fonts
+tap homebrew/cask-fonts
+cask 'font-hack'
+cask 'font-jetbrains-mono'
+
 # quick look plugins
 cask 'qlcolorcode'
 cask 'qlstephen'
