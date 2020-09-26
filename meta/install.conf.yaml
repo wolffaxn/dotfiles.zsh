@@ -4,15 +4,20 @@
       relink: true
 
 - clean:
+    ~/.local/bin/:
+      glob: true
+      path: bin/*
+
     ~/.config/:
       glob: true
       path: config/*
 
-    ~/.local/bin/:
-        glob: true
-        path: bin/*
-
 - link:
+    # bin
+    ~/.local/bin/:
+      glob: true
+      path: bin/*
+
     # curl
     ~/.config/curl/curlrc: curl/curlrc
 
@@ -54,10 +59,11 @@
       glob: true
       path: tmux/plugins/*
 
-    # bin
-    ~/.local/bin/:
+    # zsh
+    ~/.zshenv: zsh/zshenv
+    ~/.config/zsh/plugins/:
       glob: true
-      path: bin/*
+      path: zsh/plugins/*
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
