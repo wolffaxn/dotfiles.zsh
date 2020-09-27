@@ -51,6 +51,7 @@ brew 'screenfetch'
 brew 'shellcheck'
 brew 'sqlite'
 brew 'ssh-copy-id'
+brew 'starship'
 brew 'terraform'
 brew 'tmux', args: ['--with-utf8proc']
 brew 'tree'

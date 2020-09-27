@@ -61,6 +61,7 @@
 
     # zsh
     ~/.zshenv: zsh/zshenv
+    ~/.config/zsh/.zshrc: zsh/zshrc
     ~/.config/zsh/plugins/:
       glob: true
       path: zsh/plugins/*
