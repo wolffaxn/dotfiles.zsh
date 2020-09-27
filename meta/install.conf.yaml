@@ -40,15 +40,17 @@
     # idea
     ~/.ideavimrc: idea/ideavimrc
 
+    # npm
+    ~/.config/npm/npmrc: npm/npmrc
+
     # ssh
     ~/.config/ssh/config: ssh/config
 
     # spacemacs
+    ~/.spacemacs: spacemacs/spacemacs
     ~/.emacs.d:
       create: true
       path: spacemacs/emacs.d
-
-    ~/.spacemacs: spacemacs/spacemacs
 
     # tig
     ~/.config/tig/config: tig/tigrc
