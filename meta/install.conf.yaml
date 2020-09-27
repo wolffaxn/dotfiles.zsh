@@ -63,6 +63,7 @@
 
     # zsh
     ~/.zshenv: zsh/zshenv
+    ~/.config/zsh/.zlogin: zsh/zlogin
     ~/.config/zsh/.zshrc: zsh/zshrc
     ~/.config/zsh/plugins/:
       glob: true
