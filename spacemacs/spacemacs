@@ -51,6 +51,10 @@ values."
      markdown
      ;; org
      python
+     (ruby :variables
+         ruby-enable-ruby-on-rails-support t
+         ruby-test-runner 'rspec
+         ruby-version-manager 'rvm)
      rust
      ;; (shell :variables
      ;;        shell-default-height 30
