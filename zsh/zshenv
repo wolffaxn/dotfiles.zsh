@@ -1,4 +1,4 @@
 # ~/.zshenv
 
 # shellcheck disable=SC1090
-ZDOTDIR="${ZDOTDIR:-$HOME/.config/zsh}"
+export ZDOTDIR="${ZDOTDIR:-$HOME/.config/zsh}"
