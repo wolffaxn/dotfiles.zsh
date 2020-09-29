@@ -31,6 +31,17 @@
     "suppressShowKeyBindingsNotice": true
   },
 
+  "go.autocompleteUnimportedPackages": true,
+  "go.buildFlags": ["-v"],
+  "go.coverageDecorator": {
+    "type": "gutter"
+  },
+  "go.coverOnSingleTest": true,
+  "go.formatTool": "goimports",
+  "go.testTimeout": "5m",
+  "go.useCodeSnippetsOnFunctionSuggest": true,
+  "go.useLanguageServer": true,
+
   "search.exclude": {
     ".git": true,
     "bower_components": true,
