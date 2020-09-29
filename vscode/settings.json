@@ -63,6 +63,8 @@
   "terminal.integrated.fontSize": 14,
   "terminal.integrated.shell.osx": "/usr/local/bin/zsh",
 
+  "window.restoreFullscreen": true,
+  "window.title": "${activeEditorMedium}${separator}${rootName}",
   "window.zoomLevel": 0,
 
   "workbench.colorTheme": "Dracula Soft",
