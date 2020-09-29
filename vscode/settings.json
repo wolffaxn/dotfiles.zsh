@@ -1,0 +1,53 @@
+{
+  //--- Editor ---
+  "editor.cursorBlinking": "phase",
+  "editor.fontFamily": "'JetBrains Mono', Hack",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 14,
+  "editor.formatOnSave": true,
+  "editor.minimap.enabled": false,
+  "editor.renderIndentGuides": true,
+  "editor.renderWhitespace": "boundary",
+  "editor.rulers": [80, 120],
+  "editor.smoothScrolling": true,
+  "editor.tabCompletion": "on",
+  "editor.tabSize": 4,
+  "editor.wordWrap": "on",
+
+  "extensions.autoUpdate": true,
+  "extensions.ignoreRecommendations": false,
+
+  "files.autoSave": "onFocusChange",
+  "files.trimTrailingWhitespace": true,
+
+  "gitlens.advanced.messages": {
+    "suppressCommitHasNoPreviousCommitWarning": false,
+    "suppressCommitNotFoundWarning": false,
+    "suppressFileNotUnderSourceControlWarning": false,
+    "suppressGitVersionWarning": false,
+    "suppressLineUncommittedWarning": false,
+    "suppressNoRepositoryWarning": false,
+    "suppressResultsExplorerNotice": false,
+    "suppressShowKeyBindingsNotice": true
+  },
+
+  "search.exclude": {
+    ".git": true,
+    "bower_components": true,
+    "node_modules": true
+  },
+  "search.showLineNumbers": true,
+  "search.useGlobalIgnoreFiles": true,
+
+  //--- Integrated Terminal ---
+  "terminal.integrated.cursorStyle": "line",
+  "terminal.integrated.fontFamily": "Hack",
+  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.shell.osx": "/usr/local/bin/zsh",
+
+  "window.zoomLevel": 0,
+
+  "workbench.colorTheme": "Dracula Soft",
+  "workbench.statusBar.feedback.visible": false,
+  "workbench.iconTheme": "vscode-icons"
+}

@@ -61,6 +61,17 @@
       glob: true
       path: tmux/plugins/*
 
+    # vscode
+    ~/.config/Code/:
+      glob: true
+      if: "[ $(uname) = Linux ]"
+      path: vscode/*.json
+
+    ~/Library/Application Support/Code/User/:
+      glob: true
+      if: "[ $(uname) = Darwin ]"
+      path: vscode/*.json
+
     # zsh
     ~/.zshenv: zsh/zshenv
     ~/.config/zsh/.zlogin: zsh/zlogin
