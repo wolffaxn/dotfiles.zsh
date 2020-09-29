@@ -31,6 +31,9 @@
     "suppressShowKeyBindingsNotice": true
   },
 
+  "go.alternateTools": {
+    "go-langserver": "gopls"
+  },
   "go.autocompleteUnimportedPackages": true,
   "go.buildFlags": ["-v"],
   "go.coverageDecorator": {
@@ -38,6 +41,10 @@
   },
   "go.coverOnSingleTest": true,
   "go.formatTool": "goimports",
+  "go.languageServerExperimentalFeatures": {
+    "autoComplete": true,
+    "format": true
+  },
   "go.testTimeout": "5m",
   "go.useCodeSnippetsOnFunctionSuggest": true,
   "go.useLanguageServer": true,
