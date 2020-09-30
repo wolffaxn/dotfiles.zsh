@@ -68,6 +68,7 @@
   "window.zoomLevel": 0,
 
   "workbench.colorTheme": "Dracula Soft",
+  "workbench.fontAliasing": "auto",
   "workbench.statusBar.feedback.visible": false,
   "workbench.iconTheme": "vscode-icons"
 }
