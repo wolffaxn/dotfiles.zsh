@@ -15,3 +15,10 @@ set main-view = date:relative id:yes author:full commit-title:yes,graph:yes,refs
 
 # don't show staged and unstaged changes in the main view
 set show-changes = no
+
+#
+# keymaps
+#
+
+# show/hide the ID column
+bind main I :toggle id
