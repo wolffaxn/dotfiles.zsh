@@ -18,6 +18,9 @@
       glob: true
       path: bin/*
 
+    # alacritty
+    ~/.config/alacritty/alacritty.yml: alacritty/alacritty.yml
+
     # curl
     ~/.config/curl/curlrc: curl/curlrc
 

@@ -78,6 +78,7 @@ brew 'adoptopenjdk-openjdk14'
 
 # mac apps
 cask_args appdir: '/Applications'
+cask 'alacritty'
 cask 'appcleaner'
 cask 'caffeine'
 cask 'calibre'
