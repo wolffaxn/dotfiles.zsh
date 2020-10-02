@@ -49,6 +49,9 @@
   "go.useCodeSnippetsOnFunctionSuggest": true,
   "go.useLanguageServer": true,
 
+  "rust.all_features": true,
+  "rust.build_on_save": true,
+
   "search.exclude": {
     ".git": true,
     "bower_components": true,
