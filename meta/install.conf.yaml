@@ -82,6 +82,7 @@
     ~/.config/zsh/plugins/:
       glob: true
       path: zsh/plugins/*
+    ~/.config/starship.toml: zsh/starship.toml
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
