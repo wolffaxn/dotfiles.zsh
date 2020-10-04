@@ -24,6 +24,12 @@
     # curl
     ~/.config/curl/curlrc: curl/curlrc
 
+    # emacs
+    ~/.spacemacs: emacs/spacemacs
+    ~/.emacs.d:
+      create: true
+      path: emacs/emacs.d
+
     # gem
     ~/.config/gem/gemrc: ruby/gemrc
 
@@ -48,12 +54,6 @@
 
     # ssh
     ~/.config/ssh/config: ssh/config
-
-    # spacemacs
-    ~/.spacemacs: spacemacs/spacemacs
-    ~/.emacs.d:
-      create: true
-      path: spacemacs/emacs.d
 
     # tig
     ~/.config/tig/config: tig/tigrc
