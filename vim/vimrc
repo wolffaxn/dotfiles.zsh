@@ -6,10 +6,17 @@ call plug#begin("~/.config/nvim/plugged")
 " Colors
 Plug 'dracula/vim', {'as': 'dracula'}
 
+" NERDtree
+Plug 'preservim/nerdtree'
+
 call plug#end()
 
 " disable compatibility with vi
 set nocompatible
+filetype off
+filetype plugin indent on
+
+set ttyfast
 
 " file encoding
 set encoding=utf-8
@@ -47,6 +54,25 @@ set tabstop=2
 " show the filename in the window titlebar
 set title
 
-filetype off
-
+" color
+syntax enable
 colorscheme dracula
+
+:let mapleader = "-"
+
+" ===== NERDTree =====
+
+" open a NERDTree automatically when vim starts up
+autocmd vimenter * NERDTree
+" open a NERDTree automatically when vim starts up if no files were specified
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+" open NERDTree automatically when vim starts up on opening a directory
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | exe 'cd '.argv()[0] | endif
+
+let NERDTreeShowHidden=1
+
+" for toggling
+noremap <Leader>n :NERDTreeToggle<cr>
+noremap <Leader>f :NERDTreeFind<cr>
