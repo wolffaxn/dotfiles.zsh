@@ -1,18 +1,31 @@
 {
   //--- Editor ---
-  "editor.cursorBlinking": "phase",
-  "editor.fontFamily": "'JetBrains Mono', 'Fira Code', Hack",
-  "editor.fontLigatures": true,
-  "editor.fontSize": 14,
-  "editor.formatOnSave": true,
-  "editor.minimap.enabled": false,
-  "editor.renderIndentGuides": true,
-  "editor.renderWhitespace": "boundary",
-  "editor.rulers": [80, 120],
-  "editor.smoothScrolling": true,
-  "editor.tabCompletion": "on",
-  "editor.tabSize": 4,
-  "editor.wordWrap": "on",
+  "editor": {
+    "autoIndent": "advanced",
+    "codeActionsOnSave": {
+      "source.organizeImports": true
+    },
+    "cursorBlinking": "phase",
+    "dragAndDrop": true,
+    "fontFamily": "'JetBrains Mono', 'Fira Code', Hack",
+    "fontLigatures": true,
+    "fontSize": 14,
+    "formatOnPaste": true,
+    "formatOnSave": true,
+    "minimap": {
+      "enabled": true,
+      "renderCharacters": false
+    },
+    "renderIndentGuides": true,
+    "renderWhitespace": "boundary",
+    "rulers": [80, 120],
+    "smoothScrolling": true,
+    "suggestSelection": "first",
+    "tabCompletion": "on",
+    "tabSize": 4,
+    "wordWrap": "on",
+    "wordWrapColumn": 80
+  },
 
   "extensions.autoUpdate": true,
   "extensions.ignoreRecommendations": false,
