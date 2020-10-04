@@ -58,23 +58,38 @@
     "historyExplorer.enabled": true,
     "keymap": "none"
   },
-  "go.alternateTools": {
-    "go-langserver": "gopls"
+
+  // --- Golang ---
+  "go": {
+    "alternateTools": {
+      "go-langserver": "gopls"
+    },
+    "autocompleteUnimportedPackages": true,
+    "buildFlags": ["-v"],
+    "coverageDecorator": {
+      "type": "gutter"
+    },
+    "coverOnSave": true,
+    "coverOnSingleTest": true,
+    "enableCodeLens": {
+      "references": false,
+      "runtest": true
+    },
+    "formatTool": "goimports",
+    "languageServerExperimentalFeatures": {
+      "autoComplete": true,
+      "format": true
+    },
+    "lintTool": "golangci-lint",
+    "lintFlags": ["--fast", "--tests", "--vendor"],
+    "liveErrors": {
+      "enabled": true,
+      "delay": 500
+    },
+    "testTimeout": "5m",
+    "useCodeSnippetsOnFunctionSuggest": true,
+    "useLanguageServer": true
   },
-  "go.autocompleteUnimportedPackages": true,
-  "go.buildFlags": ["-v"],
-  "go.coverageDecorator": {
-    "type": "gutter"
-  },
-  "go.coverOnSingleTest": true,
-  "go.formatTool": "goimports",
-  "go.languageServerExperimentalFeatures": {
-    "autoComplete": true,
-    "format": true
-  },
-  "go.testTimeout": "5m",
-  "go.useCodeSnippetsOnFunctionSuggest": true,
-  "go.useLanguageServer": true,
 
   "rust.all_features": true,
   "rust.build_on_save": true,
