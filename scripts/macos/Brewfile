@@ -107,6 +107,8 @@ cask 'vlc'
 
 # fonts
 tap homebrew/cask-fonts
+cask 'font-fira-code'
+cask 'font-fira-mono'
 cask 'font-hack'
 cask 'font-jetbrains-mono'
 
