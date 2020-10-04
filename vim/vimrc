@@ -1,0 +1,52 @@
+"
+" Plugins
+"
+call plug#begin("~/.config/nvim/plugged")
+
+" Colors
+Plug 'dracula/vim', {'as': 'dracula'}
+
+call plug#end()
+
+" disable compatibility with vi
+set nocompatible
+
+" file encoding
+set encoding=utf-8
+set termencoding=utf-8
+
+" reload files changed on disk
+set autoread
+" write old file when switching between files
+set autowrite
+" no backup files
+set nobackup
+" no swap files
+set noswapfile
+" no undo files
+set noundofile
+
+" enable syntax highlighting
+syntax on
+" enable autoident
+set autoindent
+" allow backspace in insert mode
+set backspace=indent,eol,start
+" highlight current line
+set cursorline
+" enable line numbers
+set number
+" show the cursor position
+set ruler
+" show the command
+set showcmd
+" show the current mode
+set showmode
+" enable tabstop
+set tabstop=2
+" show the filename in the window titlebar
+set title
+
+filetype off
+
+colorscheme dracula

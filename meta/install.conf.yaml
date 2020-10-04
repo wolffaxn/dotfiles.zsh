@@ -52,6 +52,10 @@
     # npm
     ~/.config/npm/npmrc: npm/npmrc
 
+    # nvim
+    ~/.config/nvim/init.vim: vim/vimrc
+    ~/.config/nvim/autoload/plug.vim: vim/plugins/vim-plug/plug.vim
+
     # rust
     ~/.cargo/config.toml: rust/config.toml
 
