@@ -20,17 +20,31 @@
   "files.autoSave": "onFocusChange",
   "files.trimTrailingWhitespace": true,
 
-  "gitlens.advanced.messages": {
-    "suppressCommitHasNoPreviousCommitWarning": false,
-    "suppressCommitNotFoundWarning": false,
-    "suppressFileNotUnderSourceControlWarning": false,
-    "suppressGitVersionWarning": false,
-    "suppressLineUncommittedWarning": false,
-    "suppressNoRepositoryWarning": false,
-    "suppressResultsExplorerNotice": false,
-    "suppressShowKeyBindingsNotice": true
+  // --- GitLens ---
+  "gitlens": {
+    "advanced.messages": {
+      "suppressCommitHasNoPreviousCommitWarning": false,
+      "suppressCommitNotFoundWarning": false,
+      "suppressFileNotUnderSourceControlWarning": false,
+      "suppressGitVersionWarning": false,
+      "suppressLineUncommittedWarning": false,
+      "suppressNoRepositoryWarning": false,
+      "suppressResultsExplorerNotice": false,
+      "suppressShowKeyBindingsNotice": true,
+      "suppressUpdateNotice": true,
+      "suppressWelcomeNotic": true
+    },
+    "blame": {
+      "ignoreWhitespace": true
+    },
+    "codelens": {
+      "authors.enabled": false,
+      "scopes": ["document"]
+    },
+    "hovers.currentLine.over": "line",
+    "historyExplorer.enabled": true,
+    "keymap": "none"
   },
-
   "go.alternateTools": {
     "go-langserver": "gopls"
   },
