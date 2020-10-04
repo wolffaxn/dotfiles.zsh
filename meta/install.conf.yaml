@@ -49,6 +49,9 @@
     # idea
     ~/.ideavimrc: idea/ideavimrc
 
+    # java
+    ~/.m2/settings.xml: java/settings.xml
+
     # npm
     ~/.config/npm/npmrc: npm/npmrc
 
