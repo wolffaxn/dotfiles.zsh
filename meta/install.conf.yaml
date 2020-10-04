@@ -52,6 +52,9 @@
     # npm
     ~/.config/npm/npmrc: npm/npmrc
 
+    # rust
+    ~/.cargo/config.toml: rust/config.toml
+
     # ssh
     ~/.config/ssh/config: ssh/config
 
