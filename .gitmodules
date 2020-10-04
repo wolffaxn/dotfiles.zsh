@@ -2,8 +2,8 @@
   path = meta/.dotbot
   url = https://github.com/anishathalye/dotbot
 [submodule "emacs/emacs.d"]
-	path = emacs/emacs.d
-	url = https://github.com/syl20bnr/spacemacs
+  path = emacs/emacs.d
+  url = https://github.com/syl20bnr/spacemacs
 [submodule "tmux/plugins/tpm"]
   path = tmux/plugins/tpm
   url = https://github.com/tmux-plugins/tpm
