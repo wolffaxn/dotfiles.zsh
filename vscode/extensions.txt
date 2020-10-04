@@ -1,0 +1,11 @@
+be5invis.toml
+donjayamanne.githistory
+dracula-theme.theme-dracula
+eamodio.gitlens
+EditorConfig.EditorConfig
+esbenp.prettier-vscode
+golang.go
+jebbs.plantuml
+ms-azuretools.vscode-docker
+rust-lang.rust
+vscode-icons-team.vscode-icons
