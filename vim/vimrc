@@ -1,13 +1,12 @@
-"
-" Plugins
-"
+" ==================== Plugins ====================
+
 call plug#begin("~/.config/nvim/plugged")
 
 " Colors
 Plug 'dracula/vim', {'as': 'dracula'}
 
-" NERDtree
 Plug 'preservim/nerdtree'
+Plug 'tpope/vim-fugitive'
 
 call plug#end()
 
@@ -60,7 +59,11 @@ colorscheme dracula
 
 :let mapleader = "-"
 
-" ===== NERDTree =====
+" ==================== Fugitive ====================
+
+nnoremap <leader>gs :Gstatus<CR>
+
+" ==================== NERDTree ====================
 
 " open a NERDTree automatically when vim starts up
 autocmd vimenter * NERDTree
