@@ -50,6 +50,7 @@
     ~/.ideavimrc: idea/ideavimrc
 
     # java
+    ~/.gradle/gradle.properties: java/gradle.properties
     ~/.m2/settings.xml: java/settings.xml
 
     # npm
