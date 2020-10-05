@@ -71,7 +71,7 @@
   gpgsign = true
 
 [core]
-  # use custom gitignore
+  attributesfile = ~/.config/git/attributes
   excludesfile = ~/.config/git/ignore
 
   # default editor for commit messages and other inputs
