@@ -32,14 +32,10 @@ format = """\
 [character]
 error_symbol = "[✖](bold red)"
 
-[git_status]
-conflicted_count = true
-modified_count = true
-renamed_count = true
-staged_count = true
-stashed_count = true
-untracked_count = true
+[directory]
+format = "in [$path]($style)[$read_only]($read_only_style) "
 
+[git_status]
 # replacement for 'show_sync_count = true'
 ahead = "⇡${count}"
 behind = "⇣${count}"
