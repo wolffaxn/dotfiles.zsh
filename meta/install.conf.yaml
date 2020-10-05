@@ -34,6 +34,7 @@
     ~/.config/gem/gemrc: ruby/gemrc
 
     # git
+    ~/.config/git/attributes: git/gitattributes
     ~/.config/git/config: git/gitconfig
     ~/.config/git/config.local: git/gitconfig.local
     ~/.config/git/ignore: git/gitignore
