@@ -97,4 +97,4 @@
     ~/.config/starship.toml: zsh/starship.toml
 
 - shell:
-    - [git submodule update --init --recursive, Installing submodules]
+    - [git submodule update --recursive --remote, Installing submodules]
