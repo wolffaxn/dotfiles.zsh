@@ -9,7 +9,7 @@
     "dragAndDrop": true,
     "fontFamily": "'JetBrains Mono', 'Fira Code', Hack",
     "fontLigatures": true,
-    "fontSize": 14,
+    "fontSize": 12,
     "formatOnPaste": true,
     "formatOnSave": true,
     "minimap": {
