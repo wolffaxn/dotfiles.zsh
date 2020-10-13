@@ -21,6 +21,9 @@
     # alacritty
     ~/.config/alacritty/alacritty.yml: alacritty/alacritty.yml
 
+    # bat
+    ~/.config/bat/config: bat/bat.conf
+
     # curl
     ~/.config/curl/curlrc: curl/curlrc
 
