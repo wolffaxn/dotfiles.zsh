@@ -81,6 +81,9 @@
   autocrlf = input
   safecrlf = true
 
+  # tell git to be case-senstive
+  ignorecase = false
+
   # make `git rebase` safer on macos
   # see: <http://www.git-tower.com/blog/make-git-rebase-safe-on-osx/>
   trustctime = false
