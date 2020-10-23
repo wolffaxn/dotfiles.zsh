@@ -114,6 +114,7 @@
 
   "workbench.colorTheme": "Dracula Soft",
   "workbench.fontAliasing": "auto",
+  "workbench.startupEditor": "none",
   "workbench.statusBar.feedback.visible": false,
   "workbench.iconTheme": "vscode-icons"
 }
