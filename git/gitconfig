@@ -32,6 +32,11 @@
   # cherry pick
   cp = cherry-pick
 
+  # create a new git repository
+  new = "!f() { mkdir $1 && cd $1 && git init && git commit --allow-empty -m 'initial commit'; }; f"
+  # initialize, add all files and commit
+  this = "!git init && git commit --allow-empty -m 'initial commit'"
+
   # show verbose output about tags, branches or remotes
   tags = tag -l
   branches = branch -a
