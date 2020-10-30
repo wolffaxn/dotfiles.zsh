@@ -32,6 +32,15 @@
   # cherry pick
   cp = cherry-pick
 
+# find branches containing commit
+  fb = "!f() { git branch -a --contains $1; }; f"
+  # find commits by source code
+  fc = "!f() { git log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --decorate --date=short -S$1; }; f"
+  # find commits by commit message
+  fm = "!f() { git log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --decorate --date=short --grep=$1; }; f"
+  # find tags containing commit
+  ft = "!f() { git describe --always --contains $1; }; f"
+
   # view first commit of current branch
   first = "!git log --abbrev-commit --first-parent --color --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' origin/master | tail -1"
   # view abbreviated SHA, history graph and description of the latest n commits
