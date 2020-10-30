@@ -32,6 +32,19 @@
   # cherry pick
   cp = cherry-pick
 
+  # view first commit of current branch
+  first = "!git log --abbrev-commit --first-parent --color --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' origin/master | tail -1"
+  # view abbreviated SHA, history graph and description of the latest n commits
+  last = "!f() { git log -n $1 --abbrev-commit --graph --color --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'; }; f"
+  # view abbreviated SHA, history graph and description of all commits
+  oneline = "!git log --abbrev-commit --graph --color --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'"
+  # view abbreviated SHA, history graph and description of all todays commits
+  today = "!git log --abbrev-commit --date=relative --graph --color --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --since='1 Day Ago'"
+  # view unpushed commits
+  unpushed = "!git log --abbrev-commit --graph --color --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' origin/master..HEAD"
+  # 100 most often changed files
+  top100 = "!git log --pretty=format: --name-only | grep -v -e '^$' | sort | uniq -c | sort -rg | head -100"
+
   # create a new git repository
   new = "!f() { mkdir $1 && cd $1 && git init && git commit --allow-empty -m 'initial commit'; }; f"
   # initialize, add all files and commit
