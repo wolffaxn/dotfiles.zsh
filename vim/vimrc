@@ -5,6 +5,7 @@ call plug#begin("~/.config/nvim/plugged")
 " Colors
 Plug 'dracula/vim', {'as': 'dracula'}
 
+Plug 'fatih/vim-go'
 Plug 'preservim/nerdtree'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-fugitive'
@@ -63,6 +64,44 @@ syntax enable
 colorscheme dracula
 
 :let mapleader = "-"
+
+" ==================== vim-go ====================
+
+" Formatting
+let g:go_fmt_autosave = 1
+let g:go_fmt_command = "gofmt"
+
+let g:go_fold_enable = []
+
+" Syntax highlighting
+let g:go_highlight_array_whitespace_error = 0
+let g:go_highlight_build_constraints = 1
+let g:go_highlight_chan_whitespace_error = 1
+let g:go_highlight_extra_types = 0
+let g:go_highlight_fields = 1
+let g:go_highlight_format_strings = 0
+let g:go_highlight_function_arguments = 1
+let g:go_highlight_function_calls = 0
+let g:go_highlight_functions = 1
+let g:go_highlight_generate_tags = 1
+let g:go_highlight_methods = 1
+let g:go_highlight_operators = 1
+let g:go_highlight_space_tab_error = 0
+let g:go_highlight_string_spellcheck = 1
+let g:go_highlight_trailing_whitespace_error = 0
+let g:go_highlight_types = 0
+let g:go_highlight_variable_assignments = 1
+let g:go_highlight_variable_declarations = 1
+
+" Importing
+let g:go_imports_autosave = 1
+let g:go_imports_mode = "goimports"
+
+" Linting
+let g:go_metalinter_autosave_enabled = ['vet', 'golint']
+let g:go_metalinter_enabled = ['vet', 'golint']
+
+let g:go_modifytags_transform = 'camelcase'
 
 " ==================== Fugitive ====================
 
