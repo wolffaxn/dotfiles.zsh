@@ -10,6 +10,8 @@ Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
+Plug 'vim-pandoc/vim-pandoc'
+Plug 'vim-pandoc/vim-pandoc-syntax'
 
 call plug#end()
 
@@ -82,3 +84,34 @@ let NERDTreeShowHidden=1
 " for toggling
 noremap <Leader>n :NERDTreeToggle<cr>
 noremap <Leader>f :NERDTreeFind<cr>
+
+" ==================== Pandoc ====================
+
+let g:pandoc#filetypes#pandoc_markdown = 1
+let g:pandoc#modules#enabled = []
+let g:pandoc#modules#disabled = []
+let g:pandoc#syntax#codeblocks#embeds#langs = [
+\	"awk",
+\	"bash=sh",
+\	"c",
+\	"css",
+\	"dot",
+\	"go",
+\	"html",
+\	"java",
+\	"javascript",
+\	"json",
+\	"latex=tex",
+\	"lua",
+\	"makefile=make",
+\	"markdown",
+\	"pascal",
+\	"python",
+\	"sed",
+\	"sh",
+\	"sql",
+\	"sqlpostgresql=sql",
+\	"xml",
+\	"yaml"
+\]
+let g:pandoc#formatting#mode = "h"
