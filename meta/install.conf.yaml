@@ -36,6 +36,9 @@
     # gem
     ~/.config/gem/gemrc: ruby/gemrc
 
+    # gh
+    ~/.config/gh/config.yml: gh/config.yml
+
     # git
     ~/.config/git/attributes: git/gitattributes
     ~/.config/git/config: git/gitconfig
@@ -98,6 +101,7 @@
       glob: true
       path: zsh/plugins/*
     ~/.config/starship.toml: zsh/starship.toml
+    ~/.secret: zsh/secret
 
 - shell:
     - [git pull origin master --recurse-submodules, Updating submodules]
