@@ -7,6 +7,8 @@ Plug 'dracula/vim', {'as': 'dracula'}
 
 Plug 'fatih/vim-go'
 Plug 'preservim/nerdtree'
+Plug 'tmux-plugins/vim-tmux', {'for': 'tmux'}
+Plug 'tmux-plugins/vim-tmux-focus-events'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
