@@ -136,6 +136,12 @@
   # use 'hexdump' to diff binary files
   textconv = hexdump -v -C
 
+[fetch]
+	# delete local references on remotes that have deleted those branches
+	prune = true
+	# delete local tags that have been deleted on remote
+	pruneTags = true
+
 [filter "lfs"]
   required = true
   clean = git-lfs clean -- %f
