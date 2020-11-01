@@ -168,6 +168,12 @@
   # use vimdiff
   tool = vimdiff
 
+[mergetool]
+	# don't keep the original backup files
+	keepBackup = false
+	# don't ask to confirm merge tool
+	prompt = false
+
 [pack]
   # number of threads to spawn when searching for best delta matches
   # 0 = autodetect the number of CPU's and set the number of threads accordingly
