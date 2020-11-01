@@ -192,6 +192,8 @@
   # When push.default is set to 'matching', git will push local branches
   # to the remote branches that already exist with the same name.
   default = matching
+  # push tags
+  followTags = true
 
 [rebase]
   # use --autosquash by default
