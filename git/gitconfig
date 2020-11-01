@@ -208,6 +208,11 @@
   enabled = true
 
 [status]
+  # show stash count
+  showStash = true
+  # show submodule summary
+  submoduleSummary = true
+  # show untracked files
   showUntrackedFiles = all
 
 [url "git@github.com:"]
