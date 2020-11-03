@@ -69,6 +69,8 @@ path=(
   /bin
   /usr/sbin
   /sbin
+  /usr/local/sbin
+  /usr/local/opt/make/libexec/gnubin
   $DOTFILES/bin
   $XDG_DATA_HOME/npm/bin
   $path
@@ -118,6 +120,10 @@ setopt share_history
 # init starship cross-shell prompt
 eval "$(starship init zsh)"
 
+# golang
+export GOPATH=$HOME/Projects/go
+export PATH=$GOPATH/bin:$PATH
+
 #
 # Autocompletion
 #
@@ -137,6 +143,8 @@ zmodload -i zsh/complist
 
 # use emacs-like key bindings by default:
 bindkey -e
+
+source .secret
 
 #
 # Plugins
