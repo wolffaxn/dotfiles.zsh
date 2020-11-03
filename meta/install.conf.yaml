@@ -46,6 +46,7 @@
     ~/.config/git/ignore: git/gitignore
 
     # gnuppg
+    ~/.gnupg/dirmngr.conf: gnupg/dirmngr.conf
     ~/.gnupg/gpg-agent.conf: gnupg/gpg-agent.conf
     ~/.gnupg/gpg.conf: gnupg/gpg.conf
     ~/.gnupg/scdaemon.conf: gnupg/scdaemon.conf
@@ -104,4 +105,5 @@
     ~/.secret: zsh/secret
 
 - shell:
+    - [curl -k https://sks-keyservers.net/sks-keyservers.netCA.pem > ~/.gnupg/sks-keyservers.netCA.pem]
     - [git pull origin master --recurse-submodules, Updating submodules]
