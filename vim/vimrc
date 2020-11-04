@@ -5,6 +5,7 @@ call plug#begin("~/.config/nvim/plugged")
 " Colors
 Plug 'dracula/vim', {'as': 'dracula'}
 
+Plug 'airblade/vim-gitgutter'
 Plug 'fatih/vim-hclfmt'
 Plug 'fatih/vim-go'
 Plug 'hashivim/vim-terraform'
@@ -68,6 +69,14 @@ syntax enable
 colorscheme dracula
 
 :let mapleader = "-"
+
+" ==================== vim-gitgutter ====================
+
+function! GitStatus()
+  let [a,m,r] = GitGutterGetHunkSummary()
+  return printf('+%d ~%d -%d', a, m, r)
+endfunction
+set statusline+=%{GitStatus()}
 
 " ==================== vim-hclfmt ====================
 
