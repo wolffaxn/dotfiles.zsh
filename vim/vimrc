@@ -7,6 +7,7 @@ Plug 'dracula/vim', {'as': 'dracula'}
 
 Plug 'fatih/vim-hclfmt'
 Plug 'fatih/vim-go'
+Plug 'hashivim/vim-terraform'
 Plug 'preservim/nerdtree'
 Plug 'tmux-plugins/vim-tmux', {'for': 'tmux'}
 Plug 'tmux-plugins/vim-tmux-focus-events'
@@ -111,6 +112,12 @@ let g:go_metalinter_autosave_enabled = ['vet', 'golint']
 let g:go_metalinter_enabled = ['vet', 'golint']
 
 let g:go_modifytags_transform = 'camelcase'
+
+" ==================== vim-terraform ====================
+
+let g:terraform_align=1
+let g:terraform_fmt_on_save=1
+let g:terraform_fold_sections=1
 
 " ==================== Fugitive ====================
 
