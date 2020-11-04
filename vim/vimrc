@@ -5,6 +5,7 @@ call plug#begin("~/.config/nvim/plugged")
 " Colors
 Plug 'dracula/vim', {'as': 'dracula'}
 
+Plug 'fatih/vim-hclfmt'
 Plug 'fatih/vim-go'
 Plug 'preservim/nerdtree'
 Plug 'tmux-plugins/vim-tmux', {'for': 'tmux'}
@@ -66,6 +67,12 @@ syntax enable
 colorscheme dracula
 
 :let mapleader = "-"
+
+" ==================== vim-hclfmt ====================
+
+let g:hcl_fmt_autosave = 0
+let g:nomad_fmt_autosave = 0
+let g:tf_fmt_autosave = 0
 
 " ==================== vim-go ====================
 
