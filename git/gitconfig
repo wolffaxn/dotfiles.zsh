@@ -32,7 +32,7 @@
   # cherry pick
   cp = cherry-pick
 
-# find branches containing commit
+  # find branches containing commit
   fb = "!f() { git branch -a --contains $1; }; f"
   # find commits by source code
   fc = "!f() { git log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --decorate --date=short -S$1; }; f"
@@ -137,10 +137,10 @@
   textconv = hexdump -v -C
 
 [fetch]
-	# delete local references on remotes that have deleted those branches
-	prune = true
-	# delete local tags that have been deleted on remote
-	pruneTags = true
+  # delete local references on remotes that have deleted those branches
+  prune = true
+  # delete local tags that have been deleted on remote
+  pruneTags = true
 
 [filter "lfs"]
   required = true
@@ -169,10 +169,10 @@
   tool = vimdiff
 
 [mergetool]
-	# don't keep the original backup files
-	keepBackup = false
-	# don't ask to confirm merge tool
-	prompt = false
+  # don't keep the original backup files
+  keepBackup = false
+  # don't ask to confirm merge tool
+  prompt = false
 
 [pack]
   # number of threads to spawn when searching for best delta matches
@@ -214,6 +214,9 @@
   submoduleSummary = true
   # show untracked files
   showUntrackedFiles = all
+
+[tag]
+  gpgsign = true
 
 [url "git@github.com:"]
   insteadOf = "gh:"
