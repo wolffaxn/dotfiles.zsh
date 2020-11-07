@@ -29,7 +29,6 @@ brew 'gh'
 brew 'git'
 brew 'git-crypt'
 brew 'git-lfs'
-brew 'gnupg', args: ['--with-large-secmem']
 brew 'gnu-sed', args: ['--with-default-names']
 brew 'graphviz'
 brew 'grc'
@@ -74,6 +73,12 @@ brew 'kotlin'
 brew 'maven'
 brew 'python'
 brew 'rustup-init'
+
+# gnupg related tools
+brew 'gnupg', args: ['--with-large-secmem']
+brew 'hopenpgp-tools'
+brew 'pinentry-mac'
+brew 'ykman'
 
 # openjdk
 tap 'AdoptOpenJDK/openjdk'
