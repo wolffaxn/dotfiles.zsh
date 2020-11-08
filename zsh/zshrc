@@ -144,8 +144,6 @@ zmodload -i zsh/complist
 # use emacs-like key bindings by default:
 bindkey -e
 
-source .secret
-
 #
 # Plugins
 #
