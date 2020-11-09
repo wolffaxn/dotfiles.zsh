@@ -107,4 +107,5 @@
 
 - shell:
     - [curl -k https://sks-keyservers.net/sks-keyservers.netCA.pem > ~/.gnupg/sks-keyservers.netCA.pem]
-    - [git pull origin master --recurse-submodules, Updating submodules]
+    - [git submodules update --init --recursive]
+    - [git submodules update --remote]
