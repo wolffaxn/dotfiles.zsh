@@ -1,6 +1,6 @@
 " ==================== Plugins ====================
 
-call plug#begin("~/.config/nvim/plugged")
+call plug#begin("~/.vim/bundle")
 
 " Colors
 Plug 'dracula/vim', {'as': 'dracula'}

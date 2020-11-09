@@ -16,9 +16,6 @@
 [submodule "zsh/plugins/zsh-history-substring-search"]
   path = zsh/plugins/zsh-history-substring-search
   url = https://github.com/zsh-users/zsh-history-substring-search
-[submodule "vim/plugins/vim-plug"]
-  path = vim/plugins/vim-plug
-  url = https://github.com/junegunn/vim-plug
 [submodule "zsh/plugins/git-helper-scripts"]
   path = zsh/plugins/git-helper-scripts
   url = https://github.com/wolffaxn/git-helper-scripts.git
