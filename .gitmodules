@@ -7,6 +7,9 @@
 [submodule "tmux/plugins/tpm"]
   path = tmux/plugins/tpm
   url = https://github.com/tmux-plugins/tpm
+[submodule "vim/.vim-plug"]
+	path = vim/.vim-plug
+	url = https://github.com/junegunn/vim-plug
 [submodule "zsh/plugins/zsh-autosuggestions"]
   path = zsh/plugins/zsh-autosuggestions
   url = https://github.com/zsh-users/zsh-autosuggestions

@@ -65,7 +65,7 @@ set tabstop=2
 " show the filename in the window titlebar
 set title
 
-" color
+" turn-on dracula color scheme
 syntax enable
 colorscheme dracula
 

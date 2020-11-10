@@ -80,12 +80,12 @@
       path: tmux/plugins/*
 
     # (n)vim
-    ~/.vimrc: vim/vimrc
-    ~/.vim/autoload/plug.vim: vim/autoload/plug.vim
-    ~/.vim/bundle: vim/bundle
-    ~/.config/nvim/init.vim: vim/vimrc
-    ~/.config/nvim/autoload/plug.vim: vim/autoload/plug.vim
-    ~/.config/nvim/bundle: vim/bundle
+    ~/.vimrc: vim/vim/vimrc
+    ~/.vim/autoload: vim/vim/autoload
+    ~/.vim/bundle: vim/vim/bundle
+    ~/.config/nvim/init.vim: vim/vim/vimrc
+    ~/.config/nvim/autoload: vim/vim/autoload
+    ~/.config/nvim/bundle: vim/vim/bundle
 
     # vscode
     ~/.config/Code/:
