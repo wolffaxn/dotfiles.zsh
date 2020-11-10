@@ -1,5 +1,6 @@
 github.com/BurntSushi/toml
 github.com/fatih/gomodifytags
+github.com/fatih/motion
 github.com/github/hub
 github.com/godoctor/godoctor
 github.com/golang/lint/golint
@@ -15,6 +16,11 @@ github.com/sirupsen/logrus
 github.com/spf13/cobra
 github.com/sqs/goreturns
 github.com/stretchr/testify
+golang.org/x/lint/golint
+golang.org/x/tools/cmd/cover
+golang.org/x/tools/cmd/eg
+golang.org/x/tools/cmd/godoc
 golang.org/x/tools/cmd/goimports
 golang.org/x/tools/cmd/gorename
+golang.org/x/tools/cmd/gotype
 golang.org/x/tools/cmd/guru
