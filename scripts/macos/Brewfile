@@ -126,3 +126,11 @@ cask 'qlcolorcode'
 cask 'qlstephen'
 cask 'qlmarkdown'
 cask 'quicklook-json'
+
+# tap provided for all macOS < 10.14 (Mojave)
+brew 'mas-cli/tap/mas'
+mas 'Keynote', id: 409183694
+mas 'Kindle', id: 405399194
+mas 'Numbers', id: 409203825
+mas 'Pages', id: 409201541
+mas 'Xcode', id: 497799835
