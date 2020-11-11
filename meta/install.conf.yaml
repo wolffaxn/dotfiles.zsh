@@ -100,8 +100,9 @@
 
     # zsh
     ~/.zshenv: zsh/zshenv
-    ~/.config/zsh/.zlogin: zsh/zlogin
-    ~/.config/zsh/.zshrc: zsh/zshrc
+    ~/.config/zsh/.zlogin: zsh/zsh/zlogin
+    ~/.config/zsh/.zshrc: zsh/zsh/zshrc
+    ~/.config/zsh/aliases.zsh: zsh/zsh/aliases.zsh
     ~/.config/zsh/plugins/:
       glob: true
       path: zsh/plugins/*
