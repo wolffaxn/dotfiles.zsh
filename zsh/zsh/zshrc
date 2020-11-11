@@ -10,54 +10,11 @@
 # Contains sensitive data which are not pushed to GitHub.
 [ -r $ZDOTDIR/.zshrc.local ] && source $ZDOTDIR/.zshrc.local
 
-#
-# Aliases
-#
-
-# cd shorthand
-alias ..='cd ..'
-
-# clear screen
-alias cls='clear'
-
-# disk free, in gigabytes
-alias df='df -h'
-# calculates total disk usage for a folder
- alias du='du -h -c'
-
-# print the directory structure from the current directory in tree format
-alias dirtree="find . -type d|sed -e 's/[^-][^\/]*\//  |/g' -e 's/|\([^ ]\)/|-\1/'"
-
-# enable colors in grep
-alias grep='grep --color=auto'
-
-# make some desctructive commands more interactive
-alias cp='cp -i'
-alias mv='mv -i'
-alias rm='rm -i'
-
-case $(uname) in
-  Darwin)
-    alias ll='ls -alGpF'
-    alias ls='ls -GpF'
-  ;;
-  *)
-    alias ll='ls -al'
-    alias ls='ls --color=auto'
-  ;;
-esac
-
-# get week number
-alias week='date +%V'
-
-# httpie
-alias https='http --default-scheme=https'
-
-#
-# Exports
-#
-
 export DOTFILES="${DOTFILES:-$HOME/.dotfiles}"
+
+#
+# Path configuration
+#
 
 # ensure path arrays do not contain duplicates.
 typeset -gU path
@@ -72,6 +29,11 @@ path=(
   /usr/local/sbin
   /usr/local/opt/make/libexec/gnubin
   $DOTFILES/bin
+  # Golang bin path
+  $HOME/.golang/bin
+  # Rust bin path
+  $HOME/.cargo/bin
+  # NPM bin path
   $XDG_DATA_HOME/npm/bin
   $path
 )
@@ -79,10 +41,17 @@ path=(
 # export to sub-processes (make it inherited by child processes)
 export path
 
-export EDITOR="vim"
+#
+# Exports
+#
 
-export LANG="en_US.UTF-8"
-export LC_ALL="en_US.UTF-8"
+export EDITOR="nvim"
+
+# set language and encoding
+export LANG=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
+export LC_COLLATE=C
+export LC_CTYPE=en_US.UTF-8
 
 # support colors in less
 export LESS_TERMCAP_mb=$'\E[01;31m'
@@ -150,5 +119,6 @@ bindkey -e
 
 source $ZDOTDIR/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 source $ZDOTDIR/plugins/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
+source $ZDOTDIR/plugins/zsh-history-substring-search/zsh-history-substring-search.plugin.zsh
 
 #zprof
