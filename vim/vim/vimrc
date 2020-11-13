@@ -9,6 +9,7 @@ Plug 'airblade/vim-gitgutter'
 Plug 'fatih/vim-hclfmt'
 Plug 'fatih/vim-go'
 Plug 'hashivim/vim-terraform'
+Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
 Plug 'preservim/nerdtree'
 Plug 'rust-lang/rust.vim'
 Plug 'tmux-plugins/vim-tmux', {'for': 'tmux'}

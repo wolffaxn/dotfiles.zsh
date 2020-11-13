@@ -62,6 +62,7 @@ brew 'upx'
 brew 'vim', args: ['--override-system-vi']
 brew 'watch'
 brew 'wget', args: ['--enable-iri']
+brew 'yarn'
 brew 'zsh'
 brew 'zsh-completions'
 
