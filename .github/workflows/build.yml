@@ -1,12 +1,9 @@
-name: ci
+name: build
 
 on:
-#  push:
-#    branches:
-#      - master
-  pull_request:
-    branches:
-      - master
+  schedule:
+    # every Sunday at 6am
+    - cron:  '0 6 * * 0'
 
 jobs:
   build:
