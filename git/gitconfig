@@ -151,9 +151,6 @@
 [gpg]
   program = /usr/local/bin/gpg
 
-[hub]
-  protocol = ssh
-
 [init]
   # see https://sfconservancy.org/news/2020/jun/23/gitbranchname
   defaultBranch = main
