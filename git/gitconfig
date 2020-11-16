@@ -41,6 +41,9 @@
   # find tags containing commit
   ft = "!f() { git describe --always --contains $1; }; f"
 
+  # show logs with difference each commit introduces
+  changed = whatchanged
+
   # view first commit of current branch
   first = "!git log --abbrev-commit --first-parent --color --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' origin/master | tail -1"
   # view abbreviated SHA, history graph and description of the latest n commits
