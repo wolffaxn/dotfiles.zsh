@@ -73,6 +73,14 @@ colorscheme dracula
 
 :let mapleader = "-"
 
+" File Type settings
+
+augroup filetypedetect
+  autocmd FileType go setlocal noexpandtab tabstop=4 shiftwidth=4
+  autocmd FileType json setlocal expandtab shiftwidth=2 tabstop=2
+  autocmd FileType yaml setlocal expandtab shiftwidth=2 tabstop=2
+augroup END
+
 " ==================== vim-gitgutter ====================
 
 function! GitStatus()
