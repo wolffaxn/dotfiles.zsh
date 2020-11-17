@@ -75,6 +75,9 @@ brew 'maven'
 brew 'python'
 brew 'rustup-init'
 
+# docker
+brew 'docker-credential-helper'
+
 # gnupg related tools
 brew 'gnupg', args: ['--with-large-secmem']
 brew 'hopenpgp-tools'

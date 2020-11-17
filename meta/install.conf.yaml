@@ -27,6 +27,9 @@
     # curl
     ~/.config/curl/curlrc: curl/curlrc
 
+    # docker
+    ~/.docker/config.json: docker/config.json
+
     # emacs
     ~/.spacemacs: emacs/spacemacs
     ~/.emacs.d:
