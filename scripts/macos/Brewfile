@@ -10,6 +10,7 @@ tap 'homebrew/bundle'
 # bundles
 brew 'ansible'
 brew 'ant'
+brew 'antibody'
 brew 'autoconf'
 brew 'automake'
 brew 'awscli'
