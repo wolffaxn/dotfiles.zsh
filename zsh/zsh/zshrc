@@ -12,6 +12,18 @@
 
 export DOTFILES="${DOTFILES:-$HOME/.dotfiles}"
 
+# start tmux
+if [ "$TMUX" = "" ]; then
+    # check for old session
+    if [ "$(tmux ls | grep -vE 'attached' | wc -l)" -gt "0" ]; then
+        # attach to old session, if already exists
+        tmux a -t "$(tmux ls | grep -vE 'attached' | cut -d ":" -f1 | head -n 1)"
+    else
+        # start new session
+        tmux
+    fi
+fi
+
 #
 # Path configuration
 #
