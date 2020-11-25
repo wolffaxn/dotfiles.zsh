@@ -103,6 +103,7 @@
 
     # zsh
     ~/.zshenv: zsh/zshenv
+    ~/.config/zsh/.antibody_bundle: zsh/zsh/antibody_bundle
     ~/.config/zsh/.zlogin: zsh/zsh/zlogin
     ~/.config/zsh/.zshrc: zsh/zsh/zshrc
     ~/.config/zsh/aliases.zsh: zsh/zsh/aliases.zsh

@@ -10,15 +10,6 @@
 [submodule "vim/.vim-plug"]
 	path = vim/.vim-plug
 	url = https://github.com/junegunn/vim-plug
-[submodule "zsh/plugins/zsh-autosuggestions"]
-  path = zsh/plugins/zsh-autosuggestions
-  url = https://github.com/zsh-users/zsh-autosuggestions
-[submodule "zsh/plugins/fast-syntax-highlighting"]
-  path = zsh/plugins/fast-syntax-highlighting
-  url = https://github.com/zdharma/fast-syntax-highlighting
-[submodule "zsh/plugins/zsh-history-substring-search"]
-  path = zsh/plugins/zsh-history-substring-search
-  url = https://github.com/zsh-users/zsh-history-substring-search
 [submodule "zsh/plugins/git-helper-scripts"]
   path = zsh/plugins/git-helper-scripts
   url = https://github.com/wolffaxn/git-helper-scripts.git
