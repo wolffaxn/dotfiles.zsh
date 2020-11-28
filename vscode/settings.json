@@ -9,7 +9,7 @@
     "dragAndDrop": true,
     "fontFamily": "'JetBrains Mono', 'Fira Code', Hack",
     "fontLigatures": true,
-    "fontSize": 12,
+    "fontSize": 14,
     "formatOnPaste": true,
     "formatOnSave": true,
     "minimap": {
@@ -18,7 +18,10 @@
     },
     "renderIndentGuides": true,
     "renderWhitespace": "boundary",
-    "rulers": [80, 120],
+    "rulers": [
+      80,
+      120
+    ],
     "smoothScrolling": true,
     "suggestSelection": "first",
     "tabCompletion": "on",
@@ -26,13 +29,10 @@
     "wordWrap": "on",
     "wordWrapColumn": 80
   },
-
   "extensions.autoUpdate": true,
   "extensions.ignoreRecommendations": false,
-
   "files.autoSave": "onFocusChange",
   "files.trimTrailingWhitespace": true,
-
   // --- GitLens ---
   "gitlens": {
     "advanced.messages": {
@@ -52,20 +52,23 @@
     },
     "codelens": {
       "authors.enabled": false,
-      "scopes": ["document"]
+      "scopes": [
+        "document"
+      ]
     },
     "hovers.currentLine.over": "line",
     "historyExplorer.enabled": true,
     "keymap": "none"
   },
-
   // --- Golang ---
   "go": {
     "alternateTools": {
       "go-langserver": "gopls"
     },
     "autocompleteUnimportedPackages": true,
-    "buildFlags": ["-v"],
+    "buildFlags": [
+      "-v"
+    ],
     "coverageDecorator": {
       "type": "gutter"
     },
@@ -81,7 +84,11 @@
       "format": true
     },
     "lintTool": "golangci-lint",
-    "lintFlags": ["--fast", "--tests", "--vendor"],
+    "lintFlags": [
+      "--fast",
+      "--tests",
+      "--vendor"
+    ],
     "liveErrors": {
       "enabled": true,
       "delay": 500
@@ -90,10 +97,8 @@
     "useCodeSnippetsOnFunctionSuggest": true,
     "useLanguageServer": true
   },
-
   "rust.all_features": true,
   "rust.build_on_save": true,
-
   "search.exclude": {
     ".git": true,
     "bower_components": true,
@@ -101,17 +106,14 @@
   },
   "search.showLineNumbers": true,
   "search.useGlobalIgnoreFiles": true,
-
   //--- Integrated Terminal ---
   "terminal.integrated.cursorStyle": "line",
   "terminal.integrated.fontFamily": "Hack",
   "terminal.integrated.fontSize": 14,
   "terminal.integrated.shell.osx": "/usr/local/bin/zsh",
-
   "window.restoreFullscreen": true,
   "window.title": "${activeEditorMedium}${separator}${rootName}",
   "window.zoomLevel": 0,
-
   "workbench.colorTheme": "Dracula Soft",
   "workbench.fontAliasing": "auto",
   "workbench.startupEditor": "none",
