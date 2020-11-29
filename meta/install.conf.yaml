@@ -1,16 +1,10 @@
 - defaults:
     link:
       create: true
+      force: true
       relink: true
 
-- clean:
-    ~/.local/bin/:
-      glob: true
-      path: bin/*
-
-    ~/.config/:
-      glob: true
-      path: config/*
+- clean: ['~']
 
 - link:
     # bin
