@@ -101,9 +101,6 @@
     ~/.config/zsh/.zlogin: zsh/zsh/zlogin
     ~/.config/zsh/.zshrc: zsh/zsh/zshrc
     ~/.config/zsh/aliases.zsh: zsh/zsh/aliases.zsh
-    ~/.config/zsh/plugins/:
-      glob: true
-      path: zsh/plugins/*
     ~/.config/starship.toml: zsh/starship.toml
 
 - shell:
