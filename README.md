@@ -2,7 +2,7 @@
 
 [![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Actions Status](https://github.com/wolffaxn/dotfiles/workflows/build/badge.svg)](https://github.com/wolffaxn/dotfiles/actions)
-[![GitHub last commit (branch)](https://img.shields.io/github/last-commit/wolffaxn/dotfiles/master.svg)](https://github.com/wolffaxn/dotfiles)
+[![GitHub last commit (branch)](https://img.shields.io/github/last-commit/wolffaxn/dotfiles/main.svg)](https://github.com/wolffaxn/dotfiles)
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
