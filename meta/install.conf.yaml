@@ -15,6 +15,9 @@
     # alacritty
     ~/.config/alacritty/alacritty.yml: alacritty/alacritty.yml
 
+    # azure
+    ~/.azure/config: azure/config
+
     # bat
     ~/.config/bat/config: bat/bat.conf
 
